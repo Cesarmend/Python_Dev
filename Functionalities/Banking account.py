@@ -24,4 +24,12 @@ while is_running:
 
     if choice == '1':
         show_balance()
+    elif choice == '2':
+        deposit()
+    elif choice == '3':
+        withdraw()
+    elif choice == '4':
+        is_running = False
+    else:
+        print("Invalid choice")
 
