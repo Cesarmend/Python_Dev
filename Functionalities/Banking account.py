@@ -1,10 +1,16 @@
 # Python Banking Program
 
 def show_balance():
-    pass
+    print(f"Your balance is ${balance:.2f}")
 
 def deposit():
-    pass
+    amount= float(input("Enter an amount to be deposited: "))
+    
+    if amount < 0: 
+        print("That's not a valid amount")
+
+    else:
+        return amount
 
 def withdraw():
     pass
@@ -25,11 +31,13 @@ while is_running:
     if choice == '1':
         show_balance()
     elif choice == '2':
-        deposit()
+        balance += deposit()
     elif choice == '3':
         withdraw()
     elif choice == '4':
         is_running = False
     else:
         print("Invalid choice")
+
+print("Thank you, have a nice day")
 
