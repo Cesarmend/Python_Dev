@@ -5,10 +5,13 @@ import random
 def spin_row():
     symbols = [ '🍒', '🍉', '🍋', '🔔', '⭐']
 
-    result= []
-    for symbol in range(3):
-        result.append(random.choice(symbols))
-    return result
+    return [random.choice(symbols) for symbols in range(3)]
+
+
+    # result= []
+    # for symbol in range(3):
+    #     result.append(random.choice(symbols))
+    # return result
 
 def print_row():
     pass
@@ -49,6 +52,7 @@ def main():
         balance -= bet 
 
         row = spin_row()
+        print(row)
 
 if __name__ == '__main__': 
     main()
