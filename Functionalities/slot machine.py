@@ -1,8 +1,14 @@
 # Python Slot Machine
+import random
 
 
 def spin_row():
     symbols = [ '🍒', '🍉', '🍋', '🔔', '⭐']
+
+    result= []
+    for symbol in range(3):
+        result.append(random.choice(symbols))
+    return result
 
 def print_row():
     pass
