@@ -43,6 +43,7 @@ def main():
         balance -= bet 
 
         row = spin_row()
+        pass
 
 if __name__ == '__main__': 
     main()
