@@ -13,8 +13,8 @@ def spin_row():
     #     result.append(random.choice(symbols))
     # return result
 
-def print_row():
-    pass
+def print_row(row):
+    print (" ".join(row))
 
 def get_payout():
     pass
@@ -52,7 +52,8 @@ def main():
         balance -= bet 
 
         row = spin_row()
-        print(row)
+        print("Spinning...\n")
+        print_row(row)
 
 if __name__ == '__main__': 
     main()
