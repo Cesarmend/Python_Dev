@@ -5,7 +5,7 @@ import random
 def spin_row():
     symbols = [ '🍒', '🍉', '🍋', '🔔', '⭐']
 
-    return [random.choice(symbols) for symbols in range(3)]
+    return [random.choice(symbols) for i in range(3)]
 
 
     # result= []
