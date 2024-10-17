@@ -2,7 +2,7 @@
 
 
 def spin_row():
-    pass
+    symbols = [ '🍒', '🍉', '🍋', '🔔', '⭐']
 
 def print_row():
     pass
@@ -43,7 +43,6 @@ def main():
         balance -= bet 
 
         row = spin_row()
-        pass
 
 if __name__ == '__main__': 
     main()
