@@ -24,6 +24,13 @@ def get_payout(row,bet):
             return bet * 3
         elif row[0] == '🍉':
             return bet * 4
+        elif row[0] == '🍋':
+            return bet * 5
+        elif row[0] == '🔔':
+            return bet * 10
+        elif row[0] == '⭐':
+            return bet * 20  
+    return 0
 
 def main():
     balance = 100
@@ -63,6 +70,12 @@ def main():
         
         payout= get_payout(row,bet)
 
+        if payout>0 : 
+            print(f"You won ${payout}")
+        else:
+            print("Sorry you lost this round")
+
+        balance += payout
 
 
 if __name__ == '__main__': 
