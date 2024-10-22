@@ -22,3 +22,5 @@ for letter in plain_text:
 
 print(f"original message: {plain_text}")
 print(f"original message: {cipher_text}")
+
+# functions
