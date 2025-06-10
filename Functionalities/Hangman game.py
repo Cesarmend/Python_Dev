@@ -87,6 +87,6 @@ def main():
             is_running = False
 
 if __name__ == "__main__":
-    main() 
+    main()  
 
 
