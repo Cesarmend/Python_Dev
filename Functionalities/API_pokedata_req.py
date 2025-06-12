@@ -8,7 +8,10 @@ def get_pokemon_info(name):
     # print(response)
 
     if response.status_code == 200:
-        pass
+        pokemon_data = response.json()
+        return pokemon_data
+    else:
+        print(f"Failed to retrieve data {response.status_code}")
 
 pokemon_name ="pikachu"
 get_pokemon_info(pokemon_name)
